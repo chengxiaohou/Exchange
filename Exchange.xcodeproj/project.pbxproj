@@ -13,9 +13,15 @@
 		545FF3FB2330C15B003D844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545FF3FA2330C15B003D844F /* Assets.xcassets */; };
 		545FF3FE2330C15B003D844F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545FF3FC2330C15B003D844F /* LaunchScreen.storyboard */; };
 		545FF4012330C15B003D844F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545FF4002330C15B003D844F /* main.m */; };
+		54EAFDFB2330E054002296FE /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EAFDFA2330E054002296FE /* UIView+Frame.m */; };
+		54EAFDFE23310431002296FE /* HomeCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EAFDFD23310431002296FE /* HomeCVCell.m */; };
+		54EAFE0123311260002296FE /* ToolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EAFE0023311260002296FE /* ToolVC.m */; };
+		EED4FE8EAE76F9BE63AFA07A /* libPods-Exchange.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4822EAE9E203AB0C3D6D0E /* libPods-Exchange.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F4822EAE9E203AB0C3D6D0E /* libPods-Exchange.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Exchange.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E02D5F4C70F9DFE8A68254 /* Pods-Exchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exchange/Pods-Exchange.debug.xcconfig"; sourceTree = "<group>"; };
 		545FF3EE2330C158003D844F /* Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545FF3F12330C158003D844F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		545FF3F22330C158003D844F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,14 @@
 		545FF3FD2330C15B003D844F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		545FF3FF2330C15B003D844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		545FF4002330C15B003D844F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54EAFDF82330DE70002296FE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		54EAFDF92330E054002296FE /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		54EAFDFA2330E054002296FE /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		54EAFDFC23310431002296FE /* HomeCVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCVCell.h; sourceTree = "<group>"; };
+		54EAFDFD23310431002296FE /* HomeCVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCVCell.m; sourceTree = "<group>"; };
+		54EAFDFF23311260002296FE /* ToolVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolVC.h; sourceTree = "<group>"; };
+		54EAFE0023311260002296FE /* ToolVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolVC.m; sourceTree = "<group>"; };
+		98F2451A5F8ADF26DEF19266 /* Pods-Exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exchange/Pods-Exchange.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED4FE8EAE76F9BE63AFA07A /* libPods-Exchange.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22A9E1F57CA3D5E0B7E98AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F4822EAE9E203AB0C3D6D0E /* libPods-Exchange.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		545FF3E52330C158003D844F = {
 			isa = PBXGroup;
 			children = (
 				545FF3F02330C158003D844F /* Exchange */,
 				545FF3EF2330C158003D844F /* Products */,
+				79737872B86C831B3F5CF5C7 /* Pods */,
+				22A9E1F57CA3D5E0B7E98AF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +87,29 @@
 				545FF3F22330C158003D844F /* AppDelegate.m */,
 				545FF3F42330C158003D844F /* ViewController.h */,
 				545FF3F52330C158003D844F /* ViewController.m */,
+				54EAFDFF23311260002296FE /* ToolVC.h */,
+				54EAFE0023311260002296FE /* ToolVC.m */,
+				54EAFDFC23310431002296FE /* HomeCVCell.h */,
+				54EAFDFD23310431002296FE /* HomeCVCell.m */,
 				545FF3F72330C158003D844F /* Main.storyboard */,
+				54EAFDF92330E054002296FE /* UIView+Frame.h */,
+				54EAFDFA2330E054002296FE /* UIView+Frame.m */,
 				545FF3FA2330C15B003D844F /* Assets.xcassets */,
 				545FF3FC2330C15B003D844F /* LaunchScreen.storyboard */,
 				545FF3FF2330C15B003D844F /* Info.plist */,
 				545FF4002330C15B003D844F /* main.m */,
+				54EAFDF82330DE70002296FE /* PrefixHeader.pch */,
 			);
 			path = Exchange;
+			sourceTree = "<group>";
+		};
+		79737872B86C831B3F5CF5C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28E02D5F4C70F9DFE8A68254 /* Pods-Exchange.debug.xcconfig */,
+				98F2451A5F8ADF26DEF19266 /* Pods-Exchange.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 545FF4042330C15B003D844F /* Build configuration list for PBXNativeTarget "Exchange" */;
 			buildPhases = (
+				56CC0675FA5A95AC0E8D0E78 /* [CP] Check Pods Manifest.lock */,
 				545FF3EA2330C158003D844F /* Sources */,
 				545FF3EB2330C158003D844F /* Frameworks */,
 				545FF3EC2330C158003D844F /* Resources */,
@@ -136,11 +178,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56CC0675FA5A95AC0E8D0E78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Exchange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		545FF3EA2330C158003D844F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EAFE0123311260002296FE /* ToolVC.m in Sources */,
+				54EAFDFB2330E054002296FE /* UIView+Frame.m in Sources */,
+				54EAFDFE23310431002296FE /* HomeCVCell.m in Sources */,
 				545FF3F62330C158003D844F /* ViewController.m in Sources */,
 				545FF4012330C15B003D844F /* main.m in Sources */,
 				545FF3F32330C158003D844F /* AppDelegate.m in Sources */,
@@ -283,9 +349,12 @@
 		};
 		545FF4052330C15B003D844F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E02D5F4C70F9DFE8A68254 /* Pods-Exchange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Exchange/PrefixHeader.pch;
 				INFOPLIST_FILE = Exchange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +368,12 @@
 		};
 		545FF4062330C15B003D844F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F2451A5F8ADF26DEF19266 /* Pods-Exchange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Exchange/PrefixHeader.pch;
 				INFOPLIST_FILE = Exchange/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
