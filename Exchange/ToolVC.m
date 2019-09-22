@@ -23,6 +23,20 @@
 
 #pragma mark ========================================私有方法=============================================
 
+- (void)loadJson
+{
+    //读取本地JSON 方法一 路径查找 转NSData
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"exchange" ofType:@"json"];
+    
+    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+    //解析JSON 可以用数组或字典装着
+    
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
+     
+    NSString *base = dic[@"base"];
+    NSDictionary *rateDict = dic[@"rates"];
+}
+
 #pragma mark - ......::::::: UITableViewDataSource :::::::......
 
 #pragma mark TV段数
@@ -33,14 +47,13 @@
 #pragma mark TV行数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return TAB.datas.count;
+    return 0;
 }
 
 #pragma mark ［配置TV单元格］
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TVCell *cell = [tableView dequeueReusableCellWithIdentifier:TAB.typeName forIndexPath:indexPath];
-    [cell setCellInfo:TAB.datas[ROW]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"" forIndexPath:indexPath];
     return cell;
 }
 

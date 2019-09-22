@@ -16,6 +16,8 @@
 		54EAFDFB2330E054002296FE /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EAFDFA2330E054002296FE /* UIView+Frame.m */; };
 		54EAFDFE23310431002296FE /* HomeCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EAFDFD23310431002296FE /* HomeCVCell.m */; };
 		54EAFE0123311260002296FE /* ToolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EAFE0023311260002296FE /* ToolVC.m */; };
+		E48A8F4C23365C3300F1FC33 /* exchange.json in Resources */ = {isa = PBXBuildFile; fileRef = E48A8F4B23365C3300F1FC33 /* exchange.json */; };
+		E48A8F4F2336664100F1FC33 /* ToolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E48A8F4E2336664100F1FC33 /* ToolCell.m */; };
 		EED4FE8EAE76F9BE63AFA07A /* libPods-Exchange.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4822EAE9E203AB0C3D6D0E /* libPods-Exchange.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,9 @@
 		54EAFDFF23311260002296FE /* ToolVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolVC.h; sourceTree = "<group>"; };
 		54EAFE0023311260002296FE /* ToolVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolVC.m; sourceTree = "<group>"; };
 		98F2451A5F8ADF26DEF19266 /* Pods-Exchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exchange/Pods-Exchange.release.xcconfig"; sourceTree = "<group>"; };
+		E48A8F4B23365C3300F1FC33 /* exchange.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exchange.json; sourceTree = "<group>"; };
+		E48A8F4D2336664100F1FC33 /* ToolCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolCell.h; sourceTree = "<group>"; };
+		E48A8F4E2336664100F1FC33 /* ToolCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,8 @@
 				54EAFE0023311260002296FE /* ToolVC.m */,
 				54EAFDFC23310431002296FE /* HomeCVCell.h */,
 				54EAFDFD23310431002296FE /* HomeCVCell.m */,
+				E48A8F4D2336664100F1FC33 /* ToolCell.h */,
+				E48A8F4E2336664100F1FC33 /* ToolCell.m */,
 				545FF3F72330C158003D844F /* Main.storyboard */,
 				54EAFDF92330E054002296FE /* UIView+Frame.h */,
 				54EAFDFA2330E054002296FE /* UIView+Frame.m */,
@@ -99,6 +106,7 @@
 				545FF3FF2330C15B003D844F /* Info.plist */,
 				545FF4002330C15B003D844F /* main.m */,
 				54EAFDF82330DE70002296FE /* PrefixHeader.pch */,
+				E48A8F4B23365C3300F1FC33 /* exchange.json */,
 			);
 			path = Exchange;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E48A8F4C23365C3300F1FC33 /* exchange.json in Resources */,
 				545FF3FE2330C15B003D844F /* LaunchScreen.storyboard in Resources */,
 				545FF3FB2330C15B003D844F /* Assets.xcassets in Resources */,
 				545FF3F92330C158003D844F /* Main.storyboard in Resources */,
@@ -206,6 +215,7 @@
 			files = (
 				54EAFE0123311260002296FE /* ToolVC.m in Sources */,
 				54EAFDFB2330E054002296FE /* UIView+Frame.m in Sources */,
+				E48A8F4F2336664100F1FC33 /* ToolCell.m in Sources */,
 				54EAFDFE23310431002296FE /* HomeCVCell.m in Sources */,
 				545FF3F62330C158003D844F /* ViewController.m in Sources */,
 				545FF4012330C15B003D844F /* main.m in Sources */,
